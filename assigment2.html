@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Quest - Mini Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Game Header -->
+    <header class="game-header">
+        <h1>⚔️ Flexbox Quest</h1>
+
+        <div class="game-info">
+            <span>❤️ Lives: 3</span>
+            <span>🪙 Coins: 120</span>
+            <span>⭐ Level: 1</span>
+            <span>🏆 Score: 1250</span>
+        </div>
+
+        <div class="header-actions">
+            <button type="button">⏸ Pause</button>
+            <button type="button">☰ Menu</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="game-main">
+
+        <!-- Game Area -->
+        <section class="game-area">
+            <div class="game-heading">
+                <h2>🌎 Adventure World</h2>
+                <p>Collect all the stars!</p>
+            </div>
+
+            <div class="game-scene">
+                <div class="scene-info">
+                    <span>🌤 Sunny Valley</span>
+                    <span>Mission 01</span>
+                </div>
+
+                <div class="scene-characters">
+                    <div class="character">
+                        <span class="emoji">🧙</span>
+                        <span class="character-name">Player</span>
+                    </div>
+
+                    <div class="character">
+                        <span class="emoji">⭐</span>
+                        <span class="character-name">Star</span>
+                    </div>
+
+                    <div class="character">
+                        <span class="emoji">🐉</span>
+                        <span class="character-name">Dragon</span>
+                    </div>
+                </div>
+
+                <div class="platform-row">
+                    <div class="platform">🌿</div>
+                    <div class="platform">🌿</div>
+                    <div class="platform">🌿</div>
+                </div>
+            </div>
+
+            <p class="game-message">
+                💡 Tip: Use the controls to explore your adventure!
+            </p>
+        </section>
+
+        <!-- Three Game Panels -->
+        <section class="game-panels">
+
+            <!-- Controls Panel -->
+            <div class="panel controls">
+                <h2>🎮 Controls</h2>
+                <p class="panel-description">Move your player</p>
+
+                <div class="control-pad">
+                    <div class="control-row">
+                        <button type="button" class="arrow">↑</button>
+                    </div>
+
+                    <div class="control-row">
+                        <button type="button" class="arrow">←</button>
+                        <button type="button" class="arrow">↓</button>
+                        <button type="button" class="arrow">→</button>
+                    </div>
+                </div>
+
+                <button type="button" class="jump-button">
+                    🚀 JUMP
+                </button>
+
+                <p class="small-note">Practice your moves!</p>
+            </div>
+
+            <!-- Inventory Panel -->
+            <div class="panel inventory">
+                <h2>🎒 Inventory</h2>
+                <p class="panel-description">Your adventure items</p>
+
+                <div class="inventory-items">
+                    <div class="inventory-item">
+                        <span>⚔️</span>
+                        <span>Sword</span>
+                    </div>
+
+                    <div class="inventory-item">
+                        <span>🛡️</span>
+                        <span>Shield</span>
+                    </div>
+
+                    <div class="inventory-item">
+                        <span>🧪</span>
+                        <span>Potion</span>
+                    </div>
+
+                    <div class="inventory-item">
+                        <span>🗝️</span>
+                        <span>Key</span>
+                    </div>
+
+                    <div class="inventory-item">
+                        <span>🏹</span>
+                        <span>Bow</span>
+                    </div>
+
+                    <div class="inventory-item">
+                        <span>🗺️</span>
+                        <span>Map</span>
+                    </div>
+                </div>
+
+                <p class="small-note">6 items collected</p>
+            </div>
+
+            <!-- Quest Panel -->
+            <div class="panel quest">
+                <h2>📜 Quest Board</h2>
+                <p class="panel-description">Your current missions</p>
+
+                <div class="quest-list">
+                    <div class="quest-item">
+                        <div class="quest-name">
+                            <span>⭐</span>
+                            <span>Collect 3 Stars</span>
+                        </div>
+                        <span class="progress">1 / 3</span>
+                    </div>
+
+                    <div class="quest-item">
+                        <div class="quest-name">
+                            <span>🗝️</span>
+                            <span>Find Golden Key</span>
+                        </div>
+                        <span class="progress">0 / 1</span>
+                    </div>
+
+                    <div class="quest-item">
+                        <div class="quest-name">
+                            <span>🐉</span>
+                            <span>Defeat the Dragon</span>
+                        </div>
+                        <span class="progress">0 / 1</span>
+                    </div>
+                </div>
+
+                <div class="quest-status">
+                    🎯 Quest progress: 1 of 3 stars
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Display Properties Experiment -->
+        <section class="display-lab">
+            <h2>🧪 Display Properties Lab</h2>
+            <p>Experiment with block, inline, inline-block and flex.</p>
+
+            <h3>1. Block Elements</h3>
+            <div class="demo-block">Block 1</div>
+            <div class="demo-block">Block 2</div>
+
+            <h3>2. Inline Elements</h3>
+            <span class="demo-inline">Inline 1</span>
+            <span class="demo-inline">Inline 2</span>
+
+            <h3>3. Inline-Block Elements</h3>
+            <div class="demo-inline-block">Inline-block 1</div>
+            <div class="demo-inline-block">Inline-block 2</div>
+
+            <h3>4. Flex Elements</h3>
+            <div class="demo-flex">
+                <div>Flex 1</div>
+                <div>Flex 2</div>
+                <div>Flex 3</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="game-footer">
+        <p>⚔️ Flexbox Quest | Built with HTML & CSS</p>
+        <p>Keep exploring. Keep learning. Become a Flexbox Hero! ✨</p>
+    </footer>
+
+</body>
+</html>
